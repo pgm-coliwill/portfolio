@@ -1,0 +1,22 @@
+.container {
+  position: relative;
+  width: 100%;
+  background-color: #e0e0e0; /* grey background */
+  border-radius: 5px;
+  margin: 10px 0;
+}
+
+.bar {
+  height: 20px;
+  background-color: #3b82f6; /* blue bar */
+  border-radius: 5px;
+}
+
+.text {
+  position: absolute;
+  top: -25px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+}

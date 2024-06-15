@@ -1,3 +1,7 @@
+body {
+  background: linear-gradient(117deg, #1e1e1e 0%, #143332 100%);
+}
+
 .videoBackground {
   position: absolute;
   top: 0;
@@ -90,4 +94,37 @@
 
 .projectGridTwo div {
   border: #89ccbf 4px solid;
+}
+
+.projectsSection svg {
+  fill: transparent;
+  stroke: #89ccbf;
+  width: 4rem;
+}
+
+.projectsSection h2 {
+  color: white;
+  font-family: "Syne", sans-serif;
+  font-size: 2.5rem;
+}
+
+.projectGridOne div,
+.projectGridTwoProject {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 2rem 3rem;
+}
+
+.projectGridTitle {
+  background: linear-gradient(101deg, #89ccbf 1.88%, #456660 95.22%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.projectsTitle {
+  font-size: 5rem;
+  font-family: "Syne", sans-serif;
+  color: white;
 }
