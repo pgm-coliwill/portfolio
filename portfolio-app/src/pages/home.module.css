@@ -1,0 +1,93 @@
+.videoBackground {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -100;
+  object-fit: cover;
+}
+
+.flexBoxColumn {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+.titleInfoContainer {
+  max-width: 90%;
+  width: 36.6875rem;
+  border-radius: 1.25rem;
+  background: rgba(20, 51, 50, 0.5);
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+.title span {
+  color: #89ccbf;
+}
+
+/* Ensure buttonsContainer is responsive */
+.buttonsContainer {
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.title {
+  color: #d2d2d2;
+  text-align: center;
+  font-family: "Dirtyline", sans-serif;
+  font-size: 8vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 1rem;
+}
+
+.titleInfo {
+  font-family: "Syne", sans-serif;
+  text-align: center;
+  color: white;
+  font-size: 1.1875rem;
+  margin: 0;
+}
+
+.arrowContainer {
+  border: 4px solid #93bbbb;
+  border-radius: 4rem;
+  display: inline-block;
+  padding: 1rem;
+  margin: 2rem 0;
+}
+
+/* projectssection */
+
+.projectsSection {
+  height: 100vh;
+}
+
+.projectGridOne {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  height: 50%;
+}
+
+.projectGridTwo {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  height: 50%;
+}
+
+.projectGridOne div {
+  border: #89ccbf 4px solid;
+}
+
+.projectGridTwo div {
+  border: #89ccbf 4px solid;
+}

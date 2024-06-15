@@ -1,4 +1,7 @@
+// css files
 import "./Reset.css";
+import "./css/fonts.css";
+
 import {
   Route,
   createBrowserRouter,
