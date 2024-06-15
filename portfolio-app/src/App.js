@@ -1,11 +1,24 @@
 import "./Reset.css";
+import {
+  Route,
+  createBrowserRouter,
+  createRoutesFromElements,
+  RouterProvider,
+} from "react-router-dom";
+
+import { Home, ProjectDetail } from "./pages";
+
+const router = createBrowserRouter(
+  createRoutesFromElements(
+    <>
+      <Route path="/" element={<Home />} />,
+      <Route path="/project-detail" element={<ProjectDetail />} />
+    </>
+  )
+);
 
 function App() {
-  return (
-    <>
-      <h1>Portfolio App</h1>
-    </>
-  );
+  return <RouterProvider router={router} />;
 }
 
 export default App;
