@@ -1,18 +1,32 @@
+/* Global styles */
+html,
 body {
+  height: 100%;
+  margin: 0;
   background: linear-gradient(117deg, #1e1e1e 0%, #143332 100%);
+  background-size: cover;
+  background-attachment: fixed;
 }
 
+a {
+  text-decoration: none;
+}
+
+/* Video background */
 .videoBackground {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: -100;
+  z-index: 1;
   object-fit: cover;
 }
 
+/* Content container */
 .flexBoxColumn {
+  position: relative;
+  z-index: 2;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -20,6 +34,15 @@ body {
   height: 100vh;
   padding: 2rem;
   box-sizing: border-box;
+}
+
+/* Rest of the styles */
+.sectionTitle {
+  color: white;
+  font-family: "Dirtyline", sans-serif;
+  font-size: 15vw;
+  text-align: center;
+  margin-top: 3rem;
 }
 
 .titleInfoContainer {
@@ -35,12 +58,15 @@ body {
   color: #89ccbf;
 }
 
-/* Ensure buttonsContainer is responsive */
 .buttonsContainer {
-  width: 100%;
-
+  width: 80%;
   display: flex;
   justify-content: space-between;
+  
+}
+
+.heroButton {
+  cursor: pointer;
 }
 
 .title {
@@ -68,9 +94,15 @@ body {
   display: inline-block;
   padding: 1rem;
   margin: 2rem 0;
+  cursor: pointer;
+  transition: all 0.5s ease;
+
 }
 
-/* projectssection */
+.arrowContainer:hover {
+  transform: translateY(1rem);
+  transition: all 0.5s ease;
+}
 
 .projectsSection {
   height: 100vh;
@@ -127,4 +159,163 @@ body {
   font-size: 5rem;
   font-family: "Syne", sans-serif;
   color: white;
+}
+
+.skillsContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+}
+
+.skillsTextContainer {
+  border-radius: 1.25rem;
+  background: #143332;
+  max-width: 30rem;
+  padding: 2rem;
+  margin: 3rem auto;
+}
+
+.skillsText {
+  color: #fff;
+  text-align: center;
+  font-family: Syne;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+/*Services*/
+
+.serviceWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  gap: 2rem;
+}
+
+.serviceContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5rem;
+  border: #89ccbf 4px solid;
+  border-radius: 2rem;
+  width: 70%;
+  padding: 3rem;
+}
+
+.serviceTitle {
+  font-size: 4vw;
+  color: white;
+  font-family: "Syne", sans-serif;
+}
+
+.serviceDetails {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.serviceDetailText {
+  color: #fff;
+  font-family: "Syne", sans-serif;
+  font-size: 1.5625rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.serviceDetailGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.serviceDetailGrid p {
+  color: #fff;
+  font-family: "Syne", sans-serif;
+  font-size: 1.875rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.link {
+  text-decoration: none;
+  color: inherit;
+}
+
+@media (max-width: 1000px) {
+  .serviceContainer {
+    grid-template-columns: 1fr;
+    gap: 5rem;
+  }
+
+  .serviceTitle {
+    font-size: 10vw;
+  }
+}
+
+/* contact me */
+
+.pictureContainer {
+  width: 25rem;
+  height: 25rem;
+  border: #89ccbf 4px solid;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.pictureContainer img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.profileTextContainer {
+  width: 40%;
+  margin: 2rem auto;
+  padding: 2rem;
+  border: #89ccbf 4px solid;
+  border-radius: 1.25rem;
+  background: #143332;
+  min-width: 28rem;
+}
+
+.profileText {
+  font-family: "Syne", sans-serif;
+  color: white;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.contactWrapper {
+  position: relative;
+
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.navLinkContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+  gap: 2rem;
+}
+
+.navLink {
+  width: 3rem;
+  height: 3rem;
+  border: #89ccbf 2px solid;
+  display: flex;
+  justify-content: center;
+  border-radius: 3rem;
+}
+.navLink svg {
+  fill: white;
+
+  width: 2rem;
 }

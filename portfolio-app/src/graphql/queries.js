@@ -8,3 +8,13 @@ export const GET_ALL_SKILLS = gql`
     }
   }
 `;
+
+export const GET_ALL_SERVICES = gql`
+  query GET_ALL_SERVICES {
+    services {
+      description
+      title
+      details
+    }
+  }
+`;

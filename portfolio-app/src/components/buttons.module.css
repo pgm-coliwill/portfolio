@@ -6,4 +6,12 @@
   font-size: 1.875rem;
   padding: 1rem;
   font-family: "Syne", sans-serif;
+  cursor: pointer;
+  transition: 0.5s;
+  
+}
+
+.heroButton:hover {
+  transform: translateY(-0.5rem);
+  transition: 0.5s;
 }
