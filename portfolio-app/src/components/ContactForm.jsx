@@ -59,7 +59,7 @@ const ContactForm = () => {
   };
 
   return (
-    <div>
+    <div className={design.contactFormWrapper}>
       <form className={design.contactForm} onSubmit={handleSubmit}>
         <div className={design.formGroup}>
           <label className={design.formLabel} htmlFor="name">

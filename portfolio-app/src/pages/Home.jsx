@@ -7,6 +7,7 @@ import { useQuery } from "@apollo/client";
 import Skills from "../components/Skills";
 import { useIntersectionObserver } from "../hooks/useIntersectionObserver";
 import ContactForm from "../components/ContactForm";
+import { Helmet } from "react-helmet";
 
 export default function Home() {
   const {
@@ -53,6 +54,9 @@ export default function Home() {
   };
   return (
     <>
+      <Helmet>
+        <title>Portfolio Colin Willems</title>
+      </Helmet>
       <section className={design.hero}>
         <video
           autoPlay
@@ -280,6 +284,8 @@ export default function Home() {
 
         <ContactForm />
       </section>
+
+      <p className={design.invisible}>hello</p>
     </>
   );
 }

@@ -8,6 +8,10 @@ body {
   background-attachment: fixed;
 }
 
+.invisible {
+  visibility: hidden;
+}
+
 a {
   text-decoration: none;
 }
@@ -62,7 +66,6 @@ a {
   width: 80%;
   display: flex;
   justify-content: space-between;
-  
 }
 
 .heroButton {
@@ -96,7 +99,6 @@ a {
   margin: 2rem 0;
   cursor: pointer;
   transition: all 0.5s ease;
-
 }
 
 .arrowContainer:hover {
@@ -122,10 +124,22 @@ a {
 
 .projectGridOne div {
   border: #89ccbf 4px solid;
+  transition: all 0.5s ease;
+}
+
+.projectGridOne div:hover {
+  background: #89ccbf;
+  transition: all 0.5s ease;
 }
 
 .projectGridTwo div {
   border: #89ccbf 4px solid;
+  transition: all 0.5s ease;
+}
+
+.projectGridTwo div:first-of-type:hover {
+  background: #89ccbf;
+  transition: all 0.5s ease;
 }
 
 .projectsSection svg {
@@ -258,6 +272,10 @@ a {
 }
 
 /* contact me */
+
+.contactSection {
+  margin-bottom: 5rem;
+}
 
 .pictureContainer {
   width: 25rem;
